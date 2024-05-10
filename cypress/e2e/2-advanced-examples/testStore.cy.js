@@ -7,7 +7,6 @@ context('verifying multiple product', () => {
   
     it('verifying multiple product in feature', () => {
      //   cy.get('#featured > div').should('be.visible');
-
     // // Get the list of products
     // cy.get('#featured > div').each(($product, index) => {
     //   // Verify product name and price
@@ -35,7 +34,9 @@ context('verifying multiple product', () => {
 //   .and('contain', 'BeneFit Girl Meets Pearl')        // assert 2nd text
 //   .and('contain', 'Benefit Bella Bamba')
 //   .and('contain','Tropiques Minerale Loose Bronzer')    // assert 3rd text
-    });
+
+      });
+
 
     it('clicking on cart', () => {
           cy.get('li[data-id="menu_cart"]').eq(0).should('be.visible').click();
