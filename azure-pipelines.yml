@@ -14,7 +14,17 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-
+- task: Npm@1
+  inputs:
+    command: 'install'
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: 'run test'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'run report'
 - script: |
     npm install
     npm run build
