@@ -41,6 +41,7 @@ context('verifying multiple product', () => {
     it('clicking on cart', () => {
           cy.get('li[data-id="menu_cart"]').eq(0).should('be.visible').click();
           cy.get('span[class="maintext"]').should('contain',' Shopping Cart');
+          Cy.get('').should('exit');
    
       
        });
