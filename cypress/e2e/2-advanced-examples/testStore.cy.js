@@ -33,7 +33,7 @@ context('verifying multiple product', () => {
 //   .should('contain', 'Skinsheen Bronzer Stick')    // assert 1st text
 //   .and('contain', 'BeneFit Girl Meets Pearl')        // assert 2nd text
 //   .and('contain', 'Benefit Bella Bamba')
-//   .and('contain','Tropiques Minerale Loose Bronzer')    // assert 3rd text
+//   .and('contain','Tropiques Minerale Loose Bronzer')    // assert 3rd text...
 
       });
 
