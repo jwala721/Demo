@@ -11,6 +11,7 @@ describe('Cypress Test', () => {
 
         // Find the button and click it
         cy.get('button[type="submit"]').click();
+        //creat a proper test case
 
         // Verify that the message is displayed
         // cy.get('#message').should('have.text', 'Button clicked!');
