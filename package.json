@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open --browser chrome --e2e",
     "cypress:runDefault": "cypress run --spec cypress/integration/pom/*.spec.js",
-    "cypress:chrome": "cypress run --browser chrome --spec 'cypress/e2e/**/*.cy.js'",
+    "cypress:chrome": "echo \"Running Cypress tests in Chrome\" && ls -al cypress/e2e/ && cypress run --browser chrome --spec 'cypress/e2e/**/*.cy.js'",
     "cypress:edge": "cypress run --browser chrome --spec 'cypress/e2e/**/*.cy.js'",
     "cypress:runChromeHeadless": "cypress run --headless --browser chrome --spec cypress/e2e/**/*.cy.js --record --key 4bc50df7-5eee-4147-8eb3-ccea611c8d4b",
     "browser:chrome": "npx cypress run --browser=chrome --headed --spec cypress/e2e/2-advanced-examples/actions.cy.js --reporter mocha-allure-reporter",
