@@ -40,12 +40,12 @@ context('Actions', () => {
       .prev().should('have.attr', 'style', 'color: orange;')
   })
 
-  it('Intentionally failing this script', () => {
-    // https://on.cypress.io/focus
-    cy.get('').focus()
-      .should('have.class', 'focus')
-      .prev().should('have.attr', 'style', 'color: orange;')
-  })
+  // it('Intentionally failing this script', () => {
+  //   // https://on.cypress.io/focus
+  //   cy.get('').focus()
+  //     .should('have.class', 'focus')
+  //     .prev().should('have.attr', 'style', 'color: orange;')
+  // })
 
   it('.blur() - blur off a DOM element', () => {
     // https://on.cypress.io/blur
